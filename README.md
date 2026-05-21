@@ -6,10 +6,9 @@ Aplikasi web sederhana untuk memproses dan menampilkan pesanan alat tulis kantor
 
 * **UI/UX Modern, Bersih dan Simpel:** Menggunakan kerangka kerja Bootstrap 5 untuk tampilan yang bersih, kartu dengan efek bayangan, form dengan efek terapung, dan responsif terhadap perangkat mobile.
 * **Pemilihan Alat Tulis:** Menu pemilihan alat tulis menggunakan drop down dengan harga satuan yang jelas.
-* **Perhitungan Diskon Otomatis:** Memberikan diskon 10% jika total harga pemesanan lebih dari Rp 50.000.
+* **Perhitungan Diskon Otomatis:** Memberikan diskon 10% jika total harga pemesanan lebih dari Rp 50.000 dan level pelanggan adalah VIP.
 * **Nota Pemesanan Informatif:** Menampilkan nota dalam bentuk list yang rapi, lengkap dengan detail nama, jumlah barang, potongan diskon, dan total tagihan.
 * **Penyimpanan JSON:** Setiap pesanan berhasil disimpan ke dalam file `data.json`.
-* **Kode yang Bersih:** Menggunakan fungsi PHP `htmlspecialchars()` untuk sanitasi data input agar lebih aman.
 * **Struktur Folder yang Rapi:** Menempatkan file aset (CSS, img) ke dalam folder yang sesuai.
 
 ## Struktur Proyek:
@@ -49,7 +48,7 @@ TugasPraktik_KakaDaviDharmawan/
 5. **Simulasi Transaksi & Validasi:**
    * Isikan data pada **Formulir Pemesanan** (Nama, Pilihan Varian ATK dari Dropdown Array, dan Jumlah Barang).
    * Klik tombol **Proses Pesanan**.
-   * Halaman akan melakukan pemrosesan data secara aman di sisi server (*server-side processing*) dan langsung bertukar tampilan menjadi lembar **Nota Pemesanan** di halaman yang sama tanpa memicu duplikasi kode.
-   * Klik tombol **Cek File JSON** untuk memvalidasi bahwa data transaksi Anda telah berhasil terekam ke dalam struktur file `data.json`.
+   * Halaman akan melakukan pemrosesan data secara aman di sisi server (*server-side processing*) dan langsung bertukar tampilan menjadi lembar **Struk Pemesanan** di halaman yang sama tanpa memicu duplikasi kode.
+   * Klik tombol **Cek Data Pemesanan (JSON)** untuk memvalidasi bahwa data transaksi Anda telah berhasil terekam ke dalam struktur file `data.json`.
 
 ---
